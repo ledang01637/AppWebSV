@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thêm</title>
+</head>
+<body>
+    <div>
+        <h1>Them</h1>
+        <form action="~/Login/LuuThem">
+            <label>Mã sinh viên</label>
+            <input type="text" name="Ma" id="Ma" />
+            <br>
+            <label>Tên sinh viên</label>
+            <input type="text" name="Ten" id="Ten" />
+            <label>Điểm</label>
+            <input type="number" name="Diem" id="Diem" />
+            <input type="submit" value="Thêm" />
+        </form>
+    </div>
+</body>
+</html>

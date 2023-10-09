@@ -1,0 +1,38 @@
+﻿@model List<AppWebSV.SinhVien.ClSinhVien>
+@{
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+    ViewBag.title = "DsSV";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewBag.title</title>
+</head>
+<body>
+    <div>
+        <h1>Danh sách sinh viên</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Mã sinh viên</th>
+                    <th>Tên sinh viên</th>
+                    <th>Điểm</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.MaSV</td>
+                        <td>@item.HoTen</td>
+                        <td>@item.Diem</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
